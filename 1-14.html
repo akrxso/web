@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            웹 페이지 구성요소
+        </title>
+        <style>
+            body {background-color: green; color: aqua;
+            margin-left: 40px; margin-right: 40px;}
+            h3 {
+                text-align: center;
+                color:  darkblue;
+            }
+        </style>
+        <script>
+            function show()
+            {
+                document.getElementById("a").src="상상부기 1.png";
+            }
+            function hide()
+            {
+                document.getElementById("a").src="";
+            }
+
+            </script>
+    </head>
+    <body>
+        <h3 onmouseover="show()" onmouseout="hide()">
+        상상부기
+        </h3>
+        <div>
+            <img id="a" src="">
+        </div>
+        상상 부기는 한성대학교의 마스코트이다.
+    </body>
+</html>
