@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>20231230토</title>
+</head>
+
+<body>
+	<h3>색바꾸기 </h3>
+	<form>
+		색선택 <input type="color" value="#00BFFF" onchange="document.body.style.color=this.value">
+	</form>
+	<br><br>
+	<h3>시간 정보입력</h3>
+	초기 세팅 : 2023년 12월 30일 오후 2시 10분(10초 32) <br>
+	시간을 변경해 보세요
+	<form>
+		<pre>
+				month : <input type="month" value="2023-12"><br>
+				data : <input type="date" value="2023-12-30"><br>
+				time : <input type="time" value="14:10"><br>
+				local : <input type="datetime-local" value="2023-12-30T14:10:10.32"><br>
+			</pre>
+	</form>
+	<hr>
+	<br><br><br>
+	<h3>생일축하합니다</h3>
+	당신의 생일은 1999년 10월 8일 입니다 틀리면 수정하시고 생일파티 시간과 장소를 입력해주세요.
+	<form>
+		<table>
+			<tr>
+				<td>생일</td>
+				<td><input type="data" value="1999-10-08"></td>
+			</tr>
+			<tr>
+				<td>생일파티시간</td>
+				<td><input type="time"></td>
+			</tr>
+			<tr>
+				<td>생일파티 장소</td>
+				<td><input type="text"></td>
+			</tr>
+		</table>
+	</form>
+	<br><br><br>
+	<h3>회원정보 입력하기</h3>
+	<form>
+		<fieldset>
+			<legend>회원정보</legend>
+			email : <input type="email" placeholder="id@host"><br>
+			홈페이지 : <input type="url" placeholder="http://"><br>
+			전화번호 : <input type="tel" placeholder="010-0000-0000">
+			<input type="submit" value="제출">
+		</fieldset>
+		<br>
+		<h4>검색어</h4>
+		<input type="search" placeholder="검색어">
+		<input type="button" value="검색">
+	</form>
+</body>
+
+</html>

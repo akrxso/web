@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>20231229금</title>
+</head>
+
+<body>
+    <h3>20231229금</h3>
+    <hr>
+    <figure id="1-1">
+        <figcaption>상상부기 코딩</figcaption>
+        <pre>
+                <code> 상상부기 == 귀여움
+                </code>
+            </pre>
+        <hr>
+        <small>부기부기</small>
+        <pre>
+                <img src="상상부기 3.png" alt="상상부기 코딩" width="100" height="100">
+            </pre>
+    </figure>
+    <h3> detail 과 summary 태그</h3>
+    Q &amp; A 리스트
+    <hr>
+    <details>
+        <summary>상상부기 1</summary>
+        <p><img src="상상부기 2.png" alt="상상부기 2" width="100" height="100"></p>
+    </details>
+    <details>
+        <summary>상상부기 2</summary>
+        <p><img src="상상부기 3.png" alt="상상부기 3" width="100" height="100"></p>
+    </details>
+
+    <br>
+    <h3>인라인 시맨틱</h3>
+    <p>
+        내일 <mark> 망원 모임</mark>하는날 <br>
+        시간은 <time> 18:00</time> <br>
+        거리 <meter value="0.8"></meter><br>
+        모이는 사람 (6명)<progress value="6" max="10"></progress>
+    </p>
+    <br>
+    <br>
+    <h3>로그인 폼</h3>
+    <hr>
+    <form name="fo" method="get">
+        사용자 ID : <input type="text" size="15" value=""><br>
+        비밀번호 : <input type="password" size="15" value="" maxlength="10">
+        <input type="submit" value="완료">
+        <br>
+        메모장 : <textarea cols="30" rows="10">이곳에 메모가능 </textarea>
+    </form>
+    <br>
+    <h3>먹고 싶은 것</h3>
+    <form>
+        음식: <input type="text" list="food"> <br>
+        <datalist id="food">
+            <option value="아이스크림"></option>
+            <option value="쌀국수"></option>
+            <option value="케이크"></option>
+        </datalist>
+    </form>
+
+    <br>
+    <h3>버튼을 만들자</h3>
+    <form>
+        검색 : <input type="text" size="20" value="">
+        <input type="button" value="Q1">
+        <button type="button">Q2</button><br>
+        submit 버튼 :
+        <input type="submit" value="전송1">
+        <button type="submit">전송2</button>
+        <br>
+        reset 버튼 :
+        <input type="reset" value="리셋1">
+        <button type="reset">리셋2</button>
+        <br>
+        이미지 버튼 :
+        <input type="image" src="상상부기 2.png" alt="이미지버튼" width="100" height="100">
+        <button type="button">
+            <img src="상상부기 3.png" alt="이미지버튼" width="100" height="100">
+        </button>
+    </form>
+    <br><br><br>
+    <h3>체크박스 만들기</h3>
+    <form>
+        a <input type="checkbox" value="1">
+        b <input type="checkbox" value="2" checked>
+        c <input type="checkbox" value="3">
+    </form>
+
+    <br><br><br>
+    <h3>라디오 버튼 만들기(한개만 선택가능) <br>
+        가장 귀여운 부기는?</h3>
+    <form>
+        <input type="radio" name="hs" value="1" checked>
+        인사하는 부기 <img src="상상부기 2.png" width="100" height="100">
+        <input type="radio" name="hs" value="2">
+        서있는 부기 <img src="상상부기 1.png" width="100" height="100">
+        <input type="radio" name="hs" value="3">
+        공부하는 부기 <img src="상상부기 3.png" width="100" height="100">
+    </form>
+
+    <br><br><br>
+    <h3>콤보박스 만들기</h3>
+    <form>
+        <select name="dog">
+            <option value="1" selected>김막내</option>
+            <option value="2">최밥풀</option>
+        </select>
+    </form>
+
+    <br><br><br>
+    <h3>label 로그인폼</h3>
+    <form name="fo" method="get">
+        <label>사용자 ID :
+            <input type="text" size="20" value="">
+        </label><br>
+        <label for="pass">비밀번호 : </label>
+        <input id="pass" type="password" size="20" value="">
+        <input type="submit" value="완료">
+    </form>
+
+    <br><br><br>
+    <h3>&lt;label&gt;로 라디오버튼 만들기</h3>
+    <form>
+        <label>
+            <input type="radio" name="dog" value="1">
+            막내1 <img src="../akrso1.JPG" width="100" height="100">
+        </label>
+        <label>
+            <input type="radio" name="dog" value="2">
+            막내2 <img src="../akrso2.JPG" width="100" height="100">
+        </label>
+        <label>
+            <input type="radio" name="dog" value="3">
+            막내3 <img src="../akrso3.jpeg" width="100" height="100">
+        </label>
+        <label>
+            <input type="radio" name="dog" value="4">
+            막내4 <img src="../akrso4.jpeg" width="100" height="100">
+        </label>
+    </form>
+
+</body>
+
+</html>
