@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        자바스크립트 연습
+    </title>
+    <script>
+        function over(obj) {
+            obj.src = "../akrso3.jpeg";
+        }
+        function out(obj) {
+            obj.src = "../akrso4.jpeg";
+        }
+    </script>
+    <script src="lib.js"></script>
+</head>
+
+<body>
+    <h3>마우스를 올려보세요</h3>
+    <hr>
+    <img src="../akrso1.JPG" alt="이미지" width="100" onmouseover="this.src='../akrso2.JPG'"
+        onmouseout="this.src='../akrso1.JPG'">
+    <hr>
+    <img src="../akrso4.jpeg" alt="김막내" width="100" onmouseover="over(this)" onmouseout="out(this)">
+    <hr>
+    <img src="../akrso3.jpeg" alt="김막내" width="100" onmouseover="overs(this)" onmouseout="outs(this)">
+    <hr>
+    <a href="javascript:alert('클릭하셨어요?')">
+        클릭해보아요
+    </a>
+    <hr>
+    document.write()사용
+    <script>
+        document.write("<h2>안녕!</h2>");
+        document.write("2+5는");
+        document.write("<mark> 7 </mark>입니다.");
+    </script>
+    <script>
+        var x= 100; //전역변수 
+        function f()
+        {
+            var x=1;
+            document.write("<br>");
+            document.write("지역변수 x= "+x);
+            document.write("<br>");
+            document.write("전역변수 x="+this.x);
+
+        }
+        f();
+        function evalParseIntIsNaN()
+        {
+            document.write("<br>");
+            var res = eval("2*3+4");
+            document.write("eval은 식을 계산하고 결과를 리턴한다 "+res);
+            document.write("<br>");
+            var m = parseInt("a");
+            document.write(isNaN(m));
+            document.write("<br>");
+            document.write("isNaN은 숫자가 아니면 true를 리턴한다.")
+        }
+        evalParseIntIsNaN();
+    </script>
+</body>
+
+</html>
